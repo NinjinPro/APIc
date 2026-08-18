@@ -45,8 +45,13 @@ jobs:
         working-directory: android
         run: ./gradlew assembleDebug
 
+      - name: Find APK
+        run: |
+          echo "APK files:"
+          find android/app/build/outputs -type f -name "*.apk" -print
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: APIc-apk
-          path: android/app/build/outputs/apk/debug/api-c.apk
+          name: APIc-debug
+          path: android/app/build/outputs/apk/debug/*.apk
