@@ -1,0 +1,21 @@
+{
+  "name": "apic",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.2.1",
+    "@rolldown/binding-wasm32-wasi": "^1.2.4",
+    "vite": "^6.4.3"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.1",
+    "@capacitor/core": "^6.2.1",
+    "@rolldown/binding-android-arm-eabi": "^0.0.0"
+  }
+}

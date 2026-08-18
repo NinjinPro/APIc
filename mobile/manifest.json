@@ -1,0 +1,25 @@
+{
+  "name": "API Client",
+  "short_name": "APIc",
+  "description": "A lightweight mobile API testing client.",
+  "start_url": "../index.html",
+  "scope": "../",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "https://uploads.onecompiler.io/44dh5qf6t/44ygq25b3/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://uploads.onecompiler.io/44dh5qf6t/44ygq25b3/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

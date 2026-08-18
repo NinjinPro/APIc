@@ -1,0 +1,70 @@
+.console {
+    background: #eee;
+    border: 1px solid #000;
+    width: 95vw;
+    margin: 5px auto;
+    padding: 0.3rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    
+    position: absolute;
+    bottom: -40vh;
+    left: 2.25vw;
+}
+
+.console .head {
+    width: 100%;
+    
+    display: flex;
+    flex-basis: 5%
+}
+
+.console .head .label {
+    flex-basis: 90%;
+}
+
+.console .head .btns {
+    /* flex-basis: 90%; */
+    display: flex;
+    gap: 10px;
+}
+
+.console .consoles {
+    overflow-y: scroll;
+    border: 1px solid #000;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    
+    height: 0vh;
+}
+
+.console .consoles .consolee {
+    padding: 5px;
+    /*width: 100%;*/
+}
+
+.console .consoles .consolee.log {
+    background: #00ff0033;
+}
+
+.console .consoles .consolee.error {
+    background: #ff000033;
+}
+
+.console button {
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 1px;
+    font-size: 15px;
+}
+
+.console button.click {
+    background: #00ff66;
+}
+
+

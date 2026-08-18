@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>APIc</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/console.css">
+    <link rel="icon" type="image/png" href="https://uploads.onecompiler.io/44dh5qf6t/44ygq25b3/icon-512.png">
+    
+    <link rel="manifest" href="./mobile/manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+</head>
+
+
+<body>
+
+	<div id="app" class='app'>
+    	<div class="top">
+        	<!-- has top values -->
+            <div class='wrapper'>
+            	<select name="method" id="method-selector">
+                	<option value="GET">GET</option>
+                	<option value="POST">POST</option>
+                	<option value="PUT">PUT</option>
+                	<option value="DELETE">DELETE</option>
+                </select>
+                
+                <input type="text" name="url" id="url-input" >
+                
+                <button type="submit" id='send-btn'>SEND</button>
+			</div>         
+        </div>
+        
+        <!-- editing views -->
+        <div class="views">
+        	<textarea class='area req' id="req-area"></textarea>
+            <span class="vertical-ruler"></span>
+            <textarea class='area res' id="res-area" readonly="true"></textarea>
+        </div>
+    </div>
+    
+    <!-- consoleer -->
+    <div class='console'>
+    	<div class='head'>
+        	<div class='label'>
+        	    <span>Consoler</span>
+        	    <span id='consoleCount'>(0)</span>
+        	</div>
+            <div class='btns'>
+            	<button id='cleanConsole' class='delete'>Delete</button>
+            	<button id='showHideConsole' class='toogleConsole'>Show</button>
+            </div>
+        </div>
+        <div id='consoles' class='consoles'></div>
+    </div>
+
+	<!-- scripts -->
+    <script type="module" src="./src/ConsoleManager.js"></script>
+    <script type="module" src="./app.js"></script>
+    <script src="./mobile/mobile.js"></script>
+
+</body>
+
+</html>
